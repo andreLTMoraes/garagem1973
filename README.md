@@ -22,8 +22,8 @@ Garagem 1973
 
 [//]: # (Add your gifs/images here:)
 <div align="center">
-  <img src="https://i.ibb.co/LYd293J/Garagem1973.gif" 
-    alt="demo" height="425">
+  <img src="https://i.ibb.co/T2GLsBG/Garagem1973.gif" 
+    alt="demo" height="400">
 </div>
 
 <hr />

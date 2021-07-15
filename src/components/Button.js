@@ -30,15 +30,12 @@ export default function Button({text}) {
             height: 1.5rem;
         }
 
-        &:hover {
-            background-color: #1e1e1e;
-        }
         &:focus {
             outline: none;
             box-shadow: none;
         }
         &:active {
-            background-color: #000;
+            background-color: #1e1e1e;
         }
             
     `;
