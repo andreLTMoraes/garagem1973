@@ -1,22 +1,30 @@
 import React from 'react';
 import * as S from './styled';
+import LandingForm from './components/landingForm/landingForm';
+
+import logo from './assets/logoLanding.png';
 
 function App() {
   return (
-    <S.content>
-      <S.landingSection>
-        <h1 style={{color: '#fff'}}>landingSection</h1>
-      </S.landingSection>
-      <S.productsSection>
+    <S.Content>
+      <S.LandingSection id='landing'>
+        <S.LandingBox>
+          <S.Img src={logo}/>
+          <S.P>Peças, serviços e restauração de carros antigos com design e tecnologias atuais, sem abrir mão do clássico.</S.P>
+          <S.P>Deixe seu email e fique por dentro de nossos lançamentos e produtos.</S.P>
+          <LandingForm />
+        </S.LandingBox>
+      </S.LandingSection>
+      <S.ProductsSection id='products'>
         <h1>productsSection</h1>
-      </S.productsSection>
-      <S.footerSection>
+      </S.ProductsSection>
+      <S.FooterSection id='footer'>
         <h1 style={{color: '#fff'}}>footerSection</h1>
-      </S.footerSection>
-      <S.creditSection>
-        <span>Desenvolvido por <S.link href='https://github.com/andreLTMoraes/' target='_blank' rel='noreferrer'>André Moraes</S.link></span>
-      </S.creditSection>
-    </S.content>
+      </S.FooterSection>
+      <S.CreditSection id='credits'>
+        <span>Desenvolvido por <S.Link href='https://github.com/andreLTMoraes/' target='_blank' rel='noreferrer'>André Moraes</S.Link></span>
+      </S.CreditSection>
+    </S.Content>
   );
 }
 
