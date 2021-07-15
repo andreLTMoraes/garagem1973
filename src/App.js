@@ -31,7 +31,20 @@ function App() {
         ))}
       </S.ProductsSection>
       <S.FooterSection id='footer'>
-        <h1 style={{color: '#fff'}}>footerSection</h1>
+        <S.CTA>
+          <S.P>Não fique pra trás, comendo poeira!</S.P>
+          <S.P>Saia na frente e receba tudo em primeira mão.</S.P>
+          <LandingForm/>
+          <Button text='Cadastrar agora'/>
+        </S.CTA>
+        <S.Socials>
+          <S.Img src={logo}/>
+          <S.P>Acompanhe nossas redes</S.P>
+          <S.SocialIconsContainer>
+            <S.IconSocial url='https://github.com/andreLTMoraes/garagem1973' bgColor='#222'/>
+            <S.IconSocial url='https://www.linkedin.com/in/andretmoraes/' bgColor='#222'/>
+          </S.SocialIconsContainer>
+        </S.Socials>
       </S.FooterSection>
       <S.CreditSection id='credits'>
         <span>Desenvolvido por <S.Link href='https://github.com/andreLTMoraes/' target='_blank' rel='noreferrer'>André Moraes</S.Link></span>

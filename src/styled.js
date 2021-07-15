@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import bgLanding from './assets/bgLanding.png';
 import track from './assets/tire1.png';
+import { SocialIcon } from 'react-social-icons';
 
 export const Content = styled.div`
     display: flex;
@@ -120,8 +121,66 @@ export const ProductsSection = styled.section`
 `;
 
 export const FooterSection = styled.section`
-    width: 100vw;
-    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: #575757;
+    background-image: url(${track});
+    background-blend-mode: color-dodge;
+    background-repeat: repeat-x;
+    background-position: center;
+
+    @media(max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
+`;
+
+export const CTA = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    color: #fff;
+
+    @media(min-width: 768px) and (max-width: 1025px) {
+        width: 45%;
+    }
+
+    @media(max-width: 767px) {
+        width: 80%;
+    }
+`;
+
+export const Socials = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    color: #fff;
+
+    @media(min-width: 768px) and (max-width: 1025px) {
+        width: 45%;
+    }
+
+    @media(max-width: 767px) {
+        width: 80%;
+        margin-top: 3rem;
+    }
+`;
+
+export const SocialIconsContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 1rem;
+`;
+
+export const IconSocial = styled(SocialIcon)`
+    width: 2rem;
+    height: 2rem;
 `;
 
 export const CreditSection = styled.section`
@@ -136,5 +195,4 @@ export const CreditSection = styled.section`
 export const Link = styled.a`
     color: #fff;
     text-decoration: none;
-    
 `;
