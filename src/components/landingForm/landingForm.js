@@ -6,7 +6,6 @@ export default function LandingForm () {
         <>
             <S.Input placeholder='Seu nome'/>
             <S.Input placeholder='Seu melhor email'/>
-            <S.Button>Cadastrar</S.Button>
         </>
     )
 } 

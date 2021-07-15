@@ -1,8 +1,12 @@
 import React from 'react';
 import * as S from './styled';
 import LandingForm from './components/landingForm/landingForm';
+import ProductCard from './components/productCard/productCard';
+import Button from './components/Button';
+import {products} from './products';
 
 import logo from './assets/logoLanding.png';
+import productImg from './assets/product.png'
 
 function App() {
   return (
@@ -13,10 +17,18 @@ function App() {
           <S.P>Peças, serviços e restauração de carros antigos com design e tecnologias atuais, sem abrir mão do clássico.</S.P>
           <S.P>Deixe seu email e fique por dentro de nossos lançamentos e produtos.</S.P>
           <LandingForm />
+          <Button text='Cadastrar'/>
         </S.LandingBox>
       </S.LandingSection>
       <S.ProductsSection id='products'>
-        <h1>productsSection</h1>
+        <S.Track/>
+        {products.map((product) => (
+          <ProductCard
+            image={productImg}
+            title={product.name}
+            price={product.price}
+          />
+        ))}
       </S.ProductsSection>
       <S.FooterSection id='footer'>
         <h1 style={{color: '#fff'}}>footerSection</h1>

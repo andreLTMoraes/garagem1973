@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-import bgLanding from './assets/bgLanding.png'
+import styled from 'styled-components';
+import bgLanding from './assets/bgLanding.png';
+import track from './assets/tire1.png';
 
 export const Content = styled.div`
     display: flex;
@@ -88,10 +89,34 @@ export const P = styled.p`
     }
 `;
 
+export const Track = styled.div`
+    width: 100%;
+    height: 3.5rem;
+    background-image: url(${track});
+    background-size: contain;
+    position: absolute;
+    z-index: 5;
+    top: -1rem;
+    left: 0;
+    transform: rotate(-1deg);
+`;
 
 export const ProductsSection = styled.section`
-    width: 100vw;
-    background-color: #fff;
+    position: relative;
+    display: flex;
+    padding: 6rem 8rem;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+
+    @media(min-width: 768px) and (max-width: 1025px) {
+        flex-wrap: wrap;
+        padding: 6rem 10rem;
+    }
+
+    @media(max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const FooterSection = styled.section`
