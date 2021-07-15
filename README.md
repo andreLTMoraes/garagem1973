@@ -22,14 +22,16 @@ Garagem 1973
 
 [//]: # (Add your gifs/images here:)
 <div align="center">
-  <img src="https://i.ibb.co/X4JdNf3/2021-07-15-12-57-48.gif" 
+  <img src="https://i.ibb.co/LYd293J/Garagem1973.gif" 
     alt="demo" height="425">
 </div>
 
 <hr />
 
 ## O Projeto
-Durante o Hiring Coders foi proposto o desafio de se desenvolver uma Landing page de um ecommerce utilizando os conhecimentos já adquiridos até aquele momento no curso. O resultado foi esse ai.
+Durante o Hiring Coders foi proposto o desafio de se desenvolver uma Landing page de um ecommerce utilizando os conhecimentos já adquiridos até aquele momento no curso. O resultado foi esse aqui.
+<br><br>
+A página pode ser visualizada [aqui :blue_car:](https://andreLTMoraes.github.io/garagem1973)
 
 ## Recursos
 [//]: # (Add the features of your project here:)

@@ -14,6 +14,7 @@ export default function Button({text}) {
         color: #fff;
         background-color: #000;
         font-weight: 600;
+        cursor: pointer;
 
         @media(min-width: 768px) and (max-width: 1025px) {
             height: 3rem;
@@ -29,10 +30,17 @@ export default function Button({text}) {
             height: 1.5rem;
         }
 
-        &:focus,
-        &:active {
+        &:hover {
+            background-color: #1e1e1e;
+        }
+        &:focus {
             outline: none;
             box-shadow: none;
+        }
+        &:active {
+            background-color: #000;
+        }
+            
     `;
 
     return(
