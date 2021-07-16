@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/garagem1973/static/css/main.03242378.chunk.css",
-    "main.js": "/garagem1973/static/js/main.047273a7.chunk.js",
-    "main.js.map": "/garagem1973/static/js/main.047273a7.chunk.js.map",
+    "main.js": "/garagem1973/static/js/main.dbaaf373.chunk.js",
+    "main.js.map": "/garagem1973/static/js/main.dbaaf373.chunk.js.map",
     "runtime-main.js": "/garagem1973/static/js/runtime-main.dce8bb56.js",
     "runtime-main.js.map": "/garagem1973/static/js/runtime-main.dce8bb56.js.map",
-    "static/js/2.f5e56fed.chunk.js": "/garagem1973/static/js/2.f5e56fed.chunk.js",
-    "static/js/2.f5e56fed.chunk.js.map": "/garagem1973/static/js/2.f5e56fed.chunk.js.map",
+    "static/js/2.9b06e2f9.chunk.js": "/garagem1973/static/js/2.9b06e2f9.chunk.js",
+    "static/js/2.9b06e2f9.chunk.js.map": "/garagem1973/static/js/2.9b06e2f9.chunk.js.map",
     "index.html": "/garagem1973/index.html",
     "static/css/main.03242378.chunk.css.map": "/garagem1973/static/css/main.03242378.chunk.css.map",
-    "static/js/2.f5e56fed.chunk.js.LICENSE.txt": "/garagem1973/static/js/2.f5e56fed.chunk.js.LICENSE.txt",
+    "static/js/2.9b06e2f9.chunk.js.LICENSE.txt": "/garagem1973/static/js/2.9b06e2f9.chunk.js.LICENSE.txt",
     "static/media/bgLanding.445b81f5.png": "/garagem1973/static/media/bgLanding.445b81f5.png",
     "static/media/logoLanding.72c5b07e.png": "/garagem1973/static/media/logoLanding.72c5b07e.png",
     "static/media/product.f6348ea6.png": "/garagem1973/static/media/product.f6348ea6.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.dce8bb56.js",
-    "static/js/2.f5e56fed.chunk.js",
+    "static/js/2.9b06e2f9.chunk.js",
     "static/css/main.03242378.chunk.css",
-    "static/js/main.047273a7.chunk.js"
+    "static/js/main.dbaaf373.chunk.js"
   ]
 }
