@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from './styled';
 import LandingForm from './components/landingForm/landingForm';
 import ProductCard from './components/productCard/productCard';
-import Button from './components/Button';
 import {products} from './products';
 
 import logo from './assets/logoLanding.png';
 import productImg from './assets/product.png'
 
 function App() {
+  const [leads, setLeads] = useState([]);
+
   return (
     <S.Content>
       <S.LandingSection id='landing'>
@@ -16,14 +17,14 @@ function App() {
           <S.Img src={logo}/>
           <S.P>Peças, serviços e restauração de carros antigos com design e tecnologias atuais, sem abrir mão do clássico.</S.P>
           <S.P>Deixe seu email e fique por dentro de nossos lançamentos e produtos.</S.P>
-          <LandingForm />
-          <Button text='Cadastrar'/>
+          <LandingForm btnText='Cadastrar' btnAction={setLeads} leads={leads}/>
         </S.LandingBox>
       </S.LandingSection>
       <S.ProductsSection id='products'>
         <S.Track/>
-        {products.map((product) => (
+        {products.map((product, key) => (
           <ProductCard
+            key={key}
             image={productImg}
             title={product.name}
             price={product.price}
@@ -34,8 +35,7 @@ function App() {
         <S.CTA>
           <S.P>Não fique pra trás, comendo poeira!</S.P>
           <S.P>Saia na frente e receba tudo em primeira mão.</S.P>
-          <LandingForm/>
-          <Button text='Cadastrar agora'/>
+          <LandingForm btnText='Cadastrar agora' btnAction={setLeads} leads={leads}/>
         </S.CTA>
         <S.Socials>
           <S.Img src={logo}/>

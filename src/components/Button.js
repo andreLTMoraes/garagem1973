@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Button({text}) {
+export default function Button({text, handle}) {
     
 
     const Btn = styled.button`
@@ -41,6 +41,6 @@ export default function Button({text}) {
     `;
 
     return(
-        <Btn>{text}</Btn>
+        <Btn onClick={handle}>{text}</Btn>
     )
 }
